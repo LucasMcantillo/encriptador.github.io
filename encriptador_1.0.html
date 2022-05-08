@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Style_encriptador_2/style.css"/>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="Img/logo.png" alt="logo" class="logo" />
+        
+      </header>
+
+      <form class="textarea">
+        <textarea
+          name="mensaje"
+          id="mensaje"
+          class="mensaje"
+          placeholder="Ingrese el texto aquí"
+          oninput="validarTextarea(this)"
+        ></textarea>
+      </form>
+
+      <div class="botones">
+        <input type="button" class="boton-codificar" value="Encriptar" />
+        <input type="button" class="boton-decodificar" value="Desencriptar" />
+      </div>
+    </main>
+
+    <section class="rectangulo">
+      <div id="info" class="info">
+        <div class="info-img">
+          <img src="Img/muneco_lupa.jpg" />
+        </div>
+
+        <div class="texto">
+          <p>Ningún mensaje fue encontrado</p>
+          <br />
+          <p>Ingresa el texto que desees codificar o decodificar</p>
+        </div>
+      </div>
+
+      <div id="resultado" class="resultado"></div>
+      <div>
+        <input
+          id="copiar"
+          type="button"
+          class="boton-copiar"
+          value="copiar"
+          hidden
+        />
+      </div>
+    </section>
+    <script src="javascript.js/botones.js"></script>
+    <script src="javascript.js/funciones.js"></script>
+   <!-- <script src="javascript.js/otro.js"></script> -->
+  </body>
+</html>
